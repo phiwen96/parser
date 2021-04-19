@@ -28,7 +28,6 @@ add_subdirectory (cmake/phake)
 # endif ()
 
 if (CMAKE_PROJECT_NAME STREQUAL PROJECT_NAME)
-	
 	# Let's ensure -std=g++xx instead of -std=c++xx
 	set (CMAKE_CXX_STANDARD 20)
 	set (CMAKE_CXX_STANDARD_REQUIRED ON)
@@ -59,9 +58,10 @@ if (CMAKE_PROJECT_NAME STREQUAL PROJECT_NAME)
 
 endif()
 
-find_package (Boost 1.74 REQUIRED)
+# find_package (Boost 1.74 REQUIRED)
 
 add_subdirectory (src)
+
 
 
 # if ((CMAKE_PROJECT_NAME STREQUAL PROJECT_NAME OR MODERN_CMAKE_BUILD_TESTING) AND BUILD_TESTING)
